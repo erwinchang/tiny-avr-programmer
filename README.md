@@ -1,11 +1,11 @@
 #Tiny AVR Programmer
 
-??:[Tiny AVR Programmer](https://www.sparkfun.com/products/11801)
+來源:[Tiny AVR Programmer](https://www.sparkfun.com/products/11801)
 
 * [Firmware](https://www.sparkfun.com/products/11801)
 
 
-## ??
+## 相關toolchain
 
 ```
 $ dpkg-query -l | grep avr
@@ -17,7 +17,7 @@ ii  gcc-avr                                               1:4.8-2.1             
 ii  libavresample1:amd64                                  6:9.18-0ubuntu0.14.04.1                             amd64        Libav audo resampling library
 ```
 
-### ????source avr-libc_1.8.0
+### 如何生成source avr-libc_1.8.0
 
 ```
 gunzip avr-libc_1.8.0
@@ -39,4 +39,4 @@ patch -p0 < avr-libc_1.8.0-4.1.diff
 ### ????
 
 * [HOW TO UNPACK A DEBIAN SOURCE PACKAGE](http://ftp.debian.org/debian/doc/source-unpack.txt)
-* [ubuntu ????? dsc diff.gz orig.tar.gz](http://lesca.me/archives/copile-source-package-on-ubuntu.html)
+* [ubuntu 编译源码包 dsc diff.gz orig.tar.gz](http://lesca.me/archives/copile-source-package-on-ubuntu.html)
