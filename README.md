@@ -4,6 +4,27 @@
 
 * [Firmware](https://www.sparkfun.com/products/11801)
 
+## build
+
+```
+cd src/firmware
+make hex
+```
+
+* 程式相依
+```
+avr-gcc -Wall -Os -DF_CPU=16000000       -Iusbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny84 -c usbdrv/usbdrv.c -o usbdrv/usbdrv.o
+avr-gcc -Wall -Os -DF_CPU=16000000       -Iusbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny84 -x assembler-with-cpp -c usbdrv/usbdrvasm.S -o usbdrv/usbdrvasm.o
+avr-gcc -Wall -Os -DF_CPU=16000000       -Iusbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny84 -c usbdrv/oddebug.c -o usbdrv/oddebug.o
+avr-gcc -Wall -Os -DF_CPU=16000000       -Iusbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny84 -c main.c -o main.o
+
+
+OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o main.o
+
+main.elf: usbdrv $(OBJECTS) # usbdrv dependency only needed because we copy it
+     $(COMPILE) -o main.elf $(OBJECTS) 
+```
+
 
 ## 相關toolchain
 
