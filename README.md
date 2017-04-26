@@ -53,3 +53,18 @@ patch -p0 < avr-libc_1.8.0-4.1.diff
 * [HOW TO UNPACK A DEBIAN SOURCE PACKAGE](http://ftp.debian.org/debian/doc/source-unpack.txt)
 * [ubuntu 编译源码包 dsc diff.gz orig.tar.gz](http://lesca.me/archives/copile-source-package-on-ubuntu.html)
 * [原始套件的結構](https://debian-handbook.info/browse/zh-TW/stable/sect.source-package-structure.html)
+* [V-USB](https://www.obdev.at/products/vusb/index.html)
+ * V-USB is a software-only implementation of a low-speed USB device for Atmel
+ * [V-USB Reference Implementations](https://www.obdev.at/products/vusb/powerswitch.html)
+ * [A Firmware-Only USB Driver for the AVR](http://vusb.wikidot.com/)
+ * [Implementing USB 1.1 in Firmware](https://www.obdev.at/articles/implementing-usb-1.1-in-firmware.html)
+
+* [Building a RS-232 to USB Bridge Using a AT89C5131 Microcontroller](http://ww1.microchip.com/downloads/en/DeviceDoc/at89c531_3_04.pdf)
+
+ ![Imgur](http://i.imgur.com/x3HQyZT.png)
+
+ ![Imgur](http://i.imgur.com/ZMGF3po.png)
+
+
+* [Metaboard](https://metalab.at/wiki/Metaboard)
+ Metaboard is a USB based prototyping board for Atmel's AVR microcontrollers
