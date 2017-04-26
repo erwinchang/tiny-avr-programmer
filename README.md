@@ -31,3 +31,4 @@ patch -p0 < avr-libc_1.8.0-4.1.diff
 
 * [HOW TO UNPACK A DEBIAN SOURCE PACKAGE](http://ftp.debian.org/debian/doc/source-unpack.txt)
 * [ubuntu 编译源码包 dsc diff.gz orig.tar.gz](http://lesca.me/archives/copile-source-package-on-ubuntu.html)
+* [原始套件的結構](https://debian-handbook.info/browse/zh-TW/stable/sect.source-package-structure.html)
