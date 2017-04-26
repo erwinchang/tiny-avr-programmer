@@ -26,17 +26,8 @@ cp -rf avr-libc_1.8.0.orig avr-libc_1.8.0
 patch -p0 < avr-libc_1.8.0-4.1.diff
 ```
 
-### ????source avr-libc_1.8.0
 
-```
-gunzip avr-libc_1.8.0
-tar -zxvf avr-libc_1.8.0.orig.tar.gz
-cp -rf avr-libc_1.8.0.orig avr-libc_1.8.0
-patch -p0 < avr-libc_1.8.0-4.1.diff
-```
-
-
-### ????
+### 參考
 
 * [HOW TO UNPACK A DEBIAN SOURCE PACKAGE](http://ftp.debian.org/debian/doc/source-unpack.txt)
 * [ubuntu 编译源码包 dsc diff.gz orig.tar.gz](http://lesca.me/archives/copile-source-package-on-ubuntu.html)
